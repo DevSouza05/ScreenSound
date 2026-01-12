@@ -1,19 +1,22 @@
 ﻿using ScreenSound;
 
-Musica musica = new Musica(
-    "Pink Floyd",
-    "Comfortably Numb",
-    384,
+Album albumDoQueen = new Album();
+albumDoQueen.Name = "A night at the opera"; 
+
+Music musica1 = new Music(
+    "PetersonM",
+    "PetM",
+    330,
     true);
 
-Musica musica2 = new Musica(
-   "Time",
-   "Pink Floyd",
-    413,
+Music musica2 = new Music(
+    "Juli",
+    "Julia",
+    330,
     false);
 
+albumDoQueen.AdicionarMusica(musica1);
+albumDoQueen.AdicionarMusica(musica2);
 
-musica.ExibirFichaTecnica();
-
-musica2.ExibirFichaTecnica();
+albumDoQueen.ExibirMusicasDoAlbum();
 
